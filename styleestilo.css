@@ -1,0 +1,54 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuente personalizada */
+.sedgwick-ave-display-regular {
+    font-family: "sedgwick ave display",serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ /*Declaramos variables en el elemento root podemos declarar variables 
+    para tamaños de fuentes y unidades de medida para tamaños */
+    :root{
+    --color_de_fondo: #d0e7f5;
+    --color_de_componente: #adbded;
+    --color_resaltado: #1f13c5;
+    --color_botones: #2ab983;
+    --color_adicional: rgb(189,234,122);
+    --fuente_principal: "sedgwick Ave Display", serif;
+}
+
+h1{
+    font-family: var(--fuente_principal);
+}
+
+header{
+   background-color: var(--color_de_componente);
+
+   margin: 1em 3em; /* TRouBLe, Right, Left, Sentido de manecillas del reloj */
+   padding: 2em;   /*TRouBLe*/
+}
+ /* 1em - unidad relativa = 16px */
+
+/*.header-nav{
+display: flex::after
+} */
+
+nav>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: var(--color_resaltado);
+}
+
